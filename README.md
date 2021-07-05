@@ -1,2 +1,2 @@
-# React_Playground
+# React Playground
 Sandbox for react components
