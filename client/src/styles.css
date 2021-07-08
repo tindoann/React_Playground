@@ -1,0 +1,59 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: #ffffff;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch {
+  position: absolute;
+  display: block;
+  width: 41.8px;
+  height: 20px;
+  opacity: 0.6;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.switch.off {
+  background-color: #707070;
+}
+
+.switch.on {
+  background-color: #0d6412;
+}
+
+.switch.off:after,
+.switch.on:after {
+  display: block;
+  position: relative;
+  left: 1.9px;
+  top: 2px;
+  content: "";
+  height: 16px;
+  width: 16px;
+
+  background-color: #ffffff;
+  -webkit-transition: 0.6s;
+  transition: all 0.6s;
+  -webkit-transition-delay: 0.01s;
+  transition-delay: 0.01s;
+  border-radius: 50%;
+}
+
+.switch.on:after {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
