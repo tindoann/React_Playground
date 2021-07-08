@@ -1,6 +1,6 @@
 import Toggle from "./components/toggle";
-
 import "./styles.css";
+
 
 function App() {
   return (
